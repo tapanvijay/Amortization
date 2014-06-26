@@ -1,0 +1,30 @@
+Pre-requisite to run the program:
+--------------------------------
+
+1. You need to have java installed on your system. I recommend using java 7.
+
+Required classpath files:
+-------------------------
+
+1. All java files are compiled into amortization.jar. You can just reference
+   this jar in classpath to launch the program.
+
+Running amortization schedule prgoram:
+--------------------------------------
+
+java -cp amortization.jar amortization.AmortizationSchedule
+
+Input to file:
+--------------
+
+Once the program is launched, it will ask for following input:
+
+1. Amount to be borrowed in dollars as integer.
+2. Annual percentage rate as floating number.
+3. Term period in number of months.
+
+Output:
+-------
+
+It will output amortization schedule if all input parameter is correct. Else,
+it will throw a validation error which needs ot be corrected.
