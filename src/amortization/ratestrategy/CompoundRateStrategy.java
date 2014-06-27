@@ -35,7 +35,7 @@ public class CompoundRateStrategy extends InterestRateStrategy
 		double tmp = Math.pow(1d + monthlyInterestRate, - loan.getTermMonths());
 
 		// this is 1 / (1 - (Math.pow(1/(1 + J), N))))
-		tmp = 1 / (1d -tmp);
+		tmp = 1d / (1d -tmp);
 
 		// M = P * (J / (1 - (Math.pow(1/(1 + J), N))));
 		double rc = loan.getAmountBorrowed() * monthlyInterestRate * tmp;
